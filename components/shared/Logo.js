@@ -21,7 +21,7 @@ const Logo = (props) => {
   return (
     <Link href="/">
       <a className={classes.homeLink}>
-        <img className={classes.logo} alt="Home" src="static/logo.svg" />
+        <img className={classes.logo} alt="Home" src="/static/logo.svg" />
       </a>
     </Link>
   );
