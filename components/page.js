@@ -46,7 +46,7 @@ class Page extends React.Component {
           {subtitle}
         </Typography>
 
-        <div justify="center" className={classes.container}>
+        <div className={classes.container}>
           {children}
         </div>
 
