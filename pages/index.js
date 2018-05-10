@@ -69,7 +69,7 @@ class Index extends React.Component {
 
         <Menu open={this.state.menuOpen} toggle={this.toggleDialog} />
 
-        <Grid container justify="center">
+        <Grid container>
           <Grid item xs={12} sm={6} lg={4}>
 
             <Card className={classes.card}>
