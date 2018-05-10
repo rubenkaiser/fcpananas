@@ -12,7 +12,7 @@ const styles = theme => ({
     zIndex: -1,
     minHeight: '100vh',
     backgroundSize: 'cover',
-    backgroundImage: 'url(/static/bg.jpg)'
+    backgroundImage: `url(${process.env.ASSET_PREFIX}/static/bg.jpg)`
   },
 });
 
