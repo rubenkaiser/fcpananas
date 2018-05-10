@@ -37,7 +37,7 @@ const Menu = (props) => {
               className={classes.button}
             >
               <List component="nav">
-                <Link href="/">
+                <Link href="/"  as={`${process.env.ASSET_PREFIX}/`}>
                   <ListItem button>
                     <ListItemIcon>
                       <HomeIcon />
@@ -47,17 +47,17 @@ const Menu = (props) => {
                     </ListItemText>
                   </ListItem>
                 </Link>
-                <Link href="/about">
-                <ListItem button>
-                  <ListItemIcon>
-                    <InfoIcon />
-                  </ListItemIcon>
-                  <ListItemText>
-                    <a className={classes.link}>Over ons</a>
-                  </ListItemText>
-                </ListItem>
+                <Link href="/about"  as={`${process.env.ASSET_PREFIX}/about`}>
+                  <ListItem button>
+                    <ListItemIcon>
+                      <InfoIcon />
+                    </ListItemIcon>
+                    <ListItemText>
+                      <a className={classes.link}>Over ons</a>
+                    </ListItemText>
+                  </ListItem>
                 </Link>
-                <Link href="/toernooi">
+                <Link href="/tournament"  as={`${process.env.ASSET_PREFIX}/tournament`}>
                   <ListItem button>
                     <ListItemIcon>
                       <EventIcon />

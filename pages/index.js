@@ -169,7 +169,7 @@ class Index extends React.Component {
 
           <Grid item xs={12} className={classes.actions} >
 
-            <Link href="/tournament">
+            <Link href="/tournament" as={`${process.env.ASSET_PREFIX}/tournament`}>
               <a style={{textDecoration: 'none'}}>
                 <Tooltip id="tooltip-fab" title="Meer informatie over ons toernooi">
                   <Button size="large" color="secondary" className={[classes.button, classes.buttonMarginRight]} variant="raised">
@@ -180,7 +180,7 @@ class Index extends React.Component {
               </a>
             </Link>
 
-            <Link href="/tournament">
+            <Link href="/tournament" as={`${process.env.ASSET_PREFIX}/tournament`}>
               <a style={{textDecoration: 'none'}}>
                 <Tooltip id="tooltip-fab" title="Schrijf je team nu in!">
                   <Badge color="error" badgeContent={4}>
