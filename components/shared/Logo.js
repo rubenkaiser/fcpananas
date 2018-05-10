@@ -19,7 +19,7 @@ const styles = theme => ({
 const Logo = (props) => {
   const { classes } = props;
   return (
-    <Link href="/">
+    <Link href="/" as={`${process.env.ASSET_PREFIX}/`}>
       <a className={classes.homeLink}>
         <img className={classes.logo} alt="Home" src={`${process.env.ASSET_PREFIX}/static/logo.svg`} />
       </a>
