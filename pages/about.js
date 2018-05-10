@@ -7,7 +7,8 @@ import Page from './../components/page';
 
 const styles = theme => ({
   paper: {
-    padding: theme.spacing.unit*4
+    padding: theme.spacing.unit*4,
+    textAlign: 'left'
   },
 });
 

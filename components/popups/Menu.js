@@ -4,10 +4,10 @@ import Typography from 'material-ui/Typography';
 import Popup from './Popup';
 
 const Menu = (props) => {
-  const { classes, open, toggle } = props;
+  const { open, toggle } = props;
   return (
     <Popup title="Food at Pananas" id="menu" toggle={toggle} open={open}>
-      <div>
+      <div style={{textAlign: 'left'}}>
         <Typography gutterBottom variant="headline" component="h2">
           Broodje Pananas
         </Typography>

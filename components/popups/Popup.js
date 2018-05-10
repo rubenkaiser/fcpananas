@@ -46,7 +46,7 @@ const Popup = (props) => {
       </AppBar>
 
 <DialogContent>
-      <Grid container justify="center" className={classes.container}>
+      <Grid container className={classes.container}>
         {children}
       </Grid>
       </DialogContent>

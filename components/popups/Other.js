@@ -5,10 +5,10 @@ import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Ta
 import Popup from './Popup';
 
 const Other = (props) => {
-  const { classes, open, toggle } = props;
+  const { open, toggle } = props;
   return (
     <Popup title="Overige bezigheden" id="other" toggle={toggle} open={open}>
-      <div>
+      <div style={{textAlign: 'left'}}>
         <Typography gutterBottom variant="headline" component="h2">
           Zonneweide
         </Typography>
