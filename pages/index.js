@@ -159,8 +159,8 @@ class Index extends React.Component {
                   Feest
                 </Typography>
                 <Typography component="p">
-                  Na het laatste fluitsignaal steken we de barbeques aan, genieten we van een hapje en een drankje.
-                  Dit terwil onze DJ's het feest, dat tot in de late uurtjes doorgaat, alvast starten.
+                  Na het laatste fluitsignaal steken we de barbeques aan en genieten we van een hapje en een drankje.
+                  Dit terwijl onze DJ's het feest, dat tot in de late uurtjes doorgaat, alvast starten.
                 </Typography>
               </CardContent>
               <CardActions>
