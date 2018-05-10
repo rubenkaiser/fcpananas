@@ -42,6 +42,10 @@ const styles = theme => ({
     textDecoration: 'none'
   },
   buttonMarginRight: {
+    paddingTop: theme.spacing.unit*2,
+    paddingBottom: theme.spacing.unit*2,
+    marginBottom: theme.spacing.unit*2,
+    textDecoration: 'none',
     marginRight: theme.spacing.unit*2
   }
 });
@@ -173,7 +177,7 @@ class Index extends React.Component {
             <Link href="/tournament" as={`${process.env.ASSET_PREFIX}/tournament`}>
               <a style={{textDecoration: 'none'}}>
                 <Tooltip id="tooltip-fab" title="Meer informatie over ons toernooi">
-                  <Button size="large" color="secondary" className={[classes.button, classes.buttonMarginRight]} variant="raised">
+                  <Button size="large" color="secondary" className={classes.buttonMarginRight} variant="raised">
                     Meer over het toernooi
                     <InfoIcon className={classes.rightIcon}/>
                   </Button>
@@ -204,8 +208,7 @@ class Index extends React.Component {
 }
 
 Index.propTypes = {
-  classes: PropTypes.object.isRequired,
-  toggleDialog: PropTypes.func.isRequired
+  classes: PropTypes.object.isRequired
 };
 
 export default withStyles(styles)(Index);
