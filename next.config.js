@@ -1,8 +1,6 @@
 const webpack = require('webpack')
 
-const isProd = (process.env.NODE_ENV || 'production') === 'production'
-
-const assetPrefix = isProd ? '/fcpananas' : ''
+const assetPrefix = ''
 
 module.exports = {
   exportPathMap: () => ({
@@ -10,14 +8,5 @@ module.exports = {
     '/tournament': { page: '/tournament' },
     '/about': { page: '/about' },
   }),
-  assetPrefix: assetPrefix,
-  webpack: config => {
-    config.plugins.push(
-      new webpack.DefinePlugin({
-        'process.env.ASSET_PREFIX': JSON.stringify(assetPrefix),
-      }),
-    )
-
-    return config
-  },
+  assetPrefix: assetPrefix
 }

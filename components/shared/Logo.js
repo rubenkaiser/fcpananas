@@ -21,7 +21,7 @@ const Logo = (props) => {
   return (
     <Link href="/" as={`${process.env.ASSET_PREFIX}/`}>
       <a className={classes.homeLink}>
-        <img className={classes.logo} alt="Home" src={`${process.env.ASSET_PREFIX}/static/logo.svg`} />
+        <img className={classes.logo} alt="Home" src='/static/logo.svg' />
       </a>
     </Link>
   );
