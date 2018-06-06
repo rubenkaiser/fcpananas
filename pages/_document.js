@@ -93,6 +93,7 @@ MyDocument.getInitialProps = ctx => {
       </React.Fragment>
     ),
   };
+
 };
 
 export default withStyles(styles)(MyDocument);

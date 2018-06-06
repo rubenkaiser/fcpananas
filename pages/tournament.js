@@ -27,12 +27,12 @@ class Tournament extends React.Component {
 
         <Paper className={classes.paper} elevation={4}>
           <Typography gutterBottom variant="headline" component="h2">
-            Nog maar 4 plekken vrij, schrijf je team nu in!
+            We zitten vol! 15 teams gaan de strijd aan
           </Typography>
           <Typography paragraph>
-           Inmiddels stromen de aanmeldingen binnen. Wil jij ook meedoen? Wees er dan snel bij want er zijn nog maar 4 plekken vrij.
+           Het deelnemersveld was zo gevuld, 15 teams gaan de gezelligste dag van het jaar beleven bij het Pananas toernooi
            <br/>
-           Schrijf je nu in door ons een bericht te sturen via de <a target="_blank" href="https://www.facebook.com/events/1543500995687266/">Facebook pagina</a>.
+           Toch een vraag? stuur een bericht via de <a target="_blank" href="https://www.facebook.com/events/1543500995687266/">Facebook pagina</a>.
           </Typography>
 
           <Typography gutterBottom variant="headline" component="h2">

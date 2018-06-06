@@ -188,7 +188,7 @@ class Index extends React.Component {
             <Link href="/tournament">
               <a style={{textDecoration: 'none'}}>
                 <Tooltip id="tooltip-fab" title="Schrijf je team nu in!">
-                  <Badge color="error" badgeContent={4}>
+                  <Badge color="error" badgeContent={0}>
                     <Button size="large" color="primary" className={classes.button} variant="raised">
                       Inschrijven
                       <AddIcon className={classes.rightIcon}/>

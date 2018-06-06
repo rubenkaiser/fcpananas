@@ -18,8 +18,9 @@ const Program = (props) => {
     { description: "Finale wedstrijden", time: "15:00"},
     { description: "Prijsuitreiking", time: "17:00"},
     { description: "Barbeque", time: "aansluitend"},
-    { description: "Feest in de tent", time: "18:00 - sluit"},
-    { description: "Lineup to be announced", time: ""},
+    { description: "Grootse prijzenmarathon", time: "19:00"},
+    { description: "Optreden van Gerrit Denekamp", time: "20:00"},
+    { description: "Feest in de tent met DJ Arjan", time: "21:00 - sluit"}
   ];
 
   return (
