@@ -67,9 +67,9 @@ class Matches extends React.Component {
     const pouleA = {
       teams: [
         { name: 'Zilverzand', lockerroom: '1'},
-        { name: 'FC HALVU', lockerroom: '1'},
-        { name: 'Elektromotoren', lockerroom: '1'},
-        { name: 'FC Striekplanke', lockerroom: '1'},
+        { name: 'FC HALVU', lockerroom: '2'},
+        { name: 'Elektromotoren', lockerroom: '3'},
+        { name: 'FC Striekplanke', lockerroom: '4'},
         { name: 'FC Pananas', lockerroom: '2'}
       ],
       schedule: [
@@ -88,11 +88,11 @@ class Matches extends React.Component {
   
     const pouleB = {
       teams: [
-        { name: 'FC Bananas', lockerroom: '2'},
+        { name: 'FC Bananas', lockerroom: '1'},
         { name: 'Dames Zwartemeerse boys', lockerroom: 'Gymlokaal'},
-        { name: 'FC Sneeuwbal', lockerroom: '2'},
-        { name: 'Purit', lockerroom: '3'},
-        { name: 'Red Bull Lipzig', lockerroom: '3'}
+        { name: 'FC Sneeuwbal', lockerroom: '3'},
+        { name: 'Purit', lockerroom: '4'},
+        { name: 'Red Bull Lipzig', lockerroom: '1'}
       ],
       schedule: [
         {time: "11:00", home: "FC Bananas", away: "Dames Zwartemeerse boys", location: "Colloseum"},
@@ -110,11 +110,11 @@ class Matches extends React.Component {
   
     const pouleC = {
       teams: [
-        { name: 'T Dopje', lockerroom: '3'},
+        { name: 'T Dopje', lockerroom: '2'},
         { name: 'Foekens VOF', lockerroom: '3'},
         { name: 'Kanslozen', lockerroom: '4'},
-        { name: '7 bamischijven sate', lockerroom: '4'},
-        { name: 'De kuikens', lockerroom: '4'}
+        { name: '7 bamischijven sate', lockerroom: '1'},
+        { name: 'De kuikens', lockerroom: '2'}
       ],
       schedule: [
         {time: "11:00", home: "T Dopje", away: "Foekens VOF", location: "Bosatlas Theater"},
@@ -308,6 +308,108 @@ class Matches extends React.Component {
               })}
             </TableBody>
           </Table>
+
+          { /* FINALES */ }
+          <br/><br/>
+          <Typography gutterBottom variant="headline" component="h4">
+            Ananas schieten om plaats 5 t/m 15
+          </Typography>
+
+         <Table className={classes.table}>
+            <Hidden only="xs">
+              <TableHead>
+                <TableRow>
+                  <TableCell>Time</TableCell>
+                  <TableCell>Battle for</TableCell>
+                  <TableCell>Home</TableCell>
+                  <TableCell>Away</TableCell>
+                  <TableCell>Field</TableCell>
+                </TableRow>
+              </TableHead>
+            </Hidden>
+            <TableBody>
+             
+                  <TableRow className={classes.tableBodyRow}>
+                    <TableCell datatitle="Time" className={classes.tableBodyCell} component="th" scope="row">15:00</TableCell>
+                    <TableCell datatitle="Battle for" className={classes.tableBodyCell} >13, 14 & 15</TableCell>
+                    <TableCell datatitle="Home" className={classes.tableBodyCell} >Eerste Nr 5</TableCell>
+                    <TableCell datatitle="Away" className={classes.tableBodyCell} >Tweede & Derde Nr 5</TableCell>
+                    <TableCell datatitle="Location" className={classes.tableBodyCell} >Bosatlas theater</TableCell>
+                  </TableRow>
+
+                  <TableRow className={classes.tableBodyRow}>
+                    <TableCell datatitle="Time" className={classes.tableBodyCell} component="th" scope="row">15:00</TableCell>
+                    <TableCell datatitle="Battle for" className={classes.tableBodyCell} >11 & 12</TableCell>
+                    <TableCell datatitle="Home" className={classes.tableBodyCell} >Tweede Nr 4</TableCell>
+                    <TableCell datatitle="Away" className={classes.tableBodyCell} >Derde Nr 4</TableCell>
+                    <TableCell datatitle="Location" className={classes.tableBodyCell} >Panadome</TableCell>
+                  </TableRow>
+
+                  <TableRow className={classes.tableBodyRow}>
+                    <TableCell datatitle="Time" className={classes.tableBodyCell} component="th" scope="row">15:00</TableCell>
+                    <TableCell datatitle="Battle for" className={classes.tableBodyCell} >9 & 10</TableCell>
+                    <TableCell datatitle="Home" className={classes.tableBodyCell} >Derde Nr 3</TableCell>
+                    <TableCell datatitle="Away" className={classes.tableBodyCell} >Eerste Nr 4</TableCell>
+                    <TableCell datatitle="Location" className={classes.tableBodyCell} >Panadome</TableCell>
+                  </TableRow>
+
+                  <TableRow className={classes.tableBodyRow}>
+                    <TableCell datatitle="Time" className={classes.tableBodyCell} component="th" scope="row">15:00</TableCell>
+                    <TableCell datatitle="Battle for" className={classes.tableBodyCell} >7 & 8</TableCell>
+                    <TableCell datatitle="Home" className={classes.tableBodyCell} >Eerste Nr 3</TableCell>
+                    <TableCell datatitle="Away" className={classes.tableBodyCell} >Tweede Nr 3</TableCell>
+                    <TableCell datatitle="Location" className={classes.tableBodyCell} >Colloseum</TableCell>
+                  </TableRow>
+
+                  <TableRow className={classes.tableBodyRow}>
+                    <TableCell datatitle="Time" className={classes.tableBodyCell} component="th" scope="row">15:00</TableCell>
+                    <TableCell datatitle="Battle for" className={classes.tableBodyCell} >5 & 6</TableCell>
+                    <TableCell datatitle="Home" className={classes.tableBodyCell} >Tweede Nr 2</TableCell>
+                    <TableCell datatitle="Away" className={classes.tableBodyCell} >Derde Nr 2</TableCell>
+                    <TableCell datatitle="Location" className={classes.tableBodyCell} >Colloseum</TableCell>
+                  </TableRow>
+      
+            </TableBody>
+          </Table>
+
+          <br/><br/>
+          <Typography gutterBottom variant="headline" component="h4">
+            Finale wedstrijden plaats 1 t/m 4
+          </Typography>
+
+         <Table className={classes.table}>
+            <Hidden only="xs">
+              <TableHead>
+                <TableRow>
+                  <TableCell>Time</TableCell>
+                  <TableCell>Battle for</TableCell>
+                  <TableCell>Home</TableCell>
+                  <TableCell>Away</TableCell>
+                  <TableCell>Field</TableCell>
+                </TableRow>
+              </TableHead>
+            </Hidden>
+            <TableBody>
+             
+                  <TableRow className={classes.tableBodyRow}>
+                    <TableCell datatitle="Time" className={classes.tableBodyCell} component="th" scope="row">15:20</TableCell>
+                    <TableCell datatitle="Battle for" className={classes.tableBodyCell} >3 & 4</TableCell>
+                    <TableCell datatitle="Home" className={classes.tableBodyCell} >Derde Nr 1</TableCell>
+                    <TableCell datatitle="Away" className={classes.tableBodyCell} >Beste Nr 2</TableCell>
+                    <TableCell datatitle="Location" className={classes.tableBodyCell} >Panadome</TableCell>
+                  </TableRow>
+
+                   <TableRow className={classes.tableBodyRow}>
+                    <TableCell datatitle="Time" className={classes.tableBodyCell} component="th" scope="row">15:40</TableCell>
+                    <TableCell datatitle="Battle for" className={classes.tableBodyCell} >1 & 2</TableCell>
+                    <TableCell datatitle="Home" className={classes.tableBodyCell} >Beste Nr 1</TableCell>
+                    <TableCell datatitle="Away" className={classes.tableBodyCell} >Tweede Nr 1</TableCell>
+                    <TableCell datatitle="Location" className={classes.tableBodyCell} >Panadome</TableCell>
+                  </TableRow>
+      
+            </TableBody>
+          </Table>
+
           </Paper>
 </Page>
 );
