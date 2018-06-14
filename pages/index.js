@@ -7,6 +7,7 @@ import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
 import Tooltip from 'material-ui/Tooltip';
 import AddIcon from '@material-ui/icons/Add';
+import ScheduleIcon from '@material-ui/icons/Schedule';
 import InfoIcon from '@material-ui/icons/Info';
 import { withStyles } from 'material-ui/styles';
 import Badge from 'material-ui/Badge';
@@ -174,10 +175,21 @@ class Index extends React.Component {
 
           <Grid item xs={12} className={classes.actions} >
 
+            <Link href="/matches">
+              <a style={{textDecoration: 'none'}}>
+                <Tooltip id="tooltip-fab" title="Wedstrijdschema">
+                  <Button size="large" color="secondary" className={classes.buttonMarginRight} variant="raised">
+                    Poule indeling en wedstrijdschema
+                    <ScheduleIcon className={classes.rightIcon}/>
+                  </Button>
+                </Tooltip>
+              </a>
+            </Link>
+
             <Link href="/tournament">
               <a style={{textDecoration: 'none'}}>
                 <Tooltip id="tooltip-fab" title="Meer informatie over ons toernooi">
-                  <Button size="large" color="secondary" className={classes.buttonMarginRight} variant="raised">
+                  <Button size="large" color="primary" className={classes.buttonMarginRight} variant="raised">
                     Meer over het toernooi
                     <InfoIcon className={classes.rightIcon}/>
                   </Button>
@@ -185,6 +197,7 @@ class Index extends React.Component {
               </a>
             </Link>
 
+            { /* 
             <Link href="/tournament">
               <a style={{textDecoration: 'none'}}>
                 <Tooltip id="tooltip-fab" title="Schrijf je team nu in!">
@@ -197,6 +210,7 @@ class Index extends React.Component {
                 </Tooltip>
               </a>
             </Link>
+            */}
             
           </Grid>
 
