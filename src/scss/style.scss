@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Neuton:400,700|PT+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+
+$purple: #7B3598;
+
+@import 'header';
+@import 'artwork';
+@import 'modal';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  background: $purple;
+  cursor: url('../assets/images/cursor.png'), auto;	
+  background-image: url('../assets/images/bg-pattern.png');
+  background-repeat: repeat;
+}
+
+.links {
+  margin-top: 2vh;
+  text-align: center;
+  a {
+    img {
+      transition: all .2s ease-in-out;
+      width: 300px;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+h1, h2, h3 {
+  font-family: 'Caveat Brush', cursive;
+  margin-bottom: 8px;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.6rem;
+}
+
+p {
+  line-height: 1.4rem;
+  margin-top: 8px;
+}

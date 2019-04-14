@@ -2,30 +2,13 @@
   "name": "FCPananas",
   "version": "1.0.0",
   "description": "",
+  "author": "Ruben Kaiser",
   "main": "index.js",
   "scripts": {
-    "dev": "next -p 4000",
-    "build": "next build",
-    "output": "next export -o docs",
-    "start": "next start"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@material-ui/icons": "^1.0.0-beta.42",
-    "jss": "^9.8.1",
-    "material-ui": "^1.0.0-beta.42",
-    "next": "^5.1.0",
-    "prop-types": "^15.6.1",
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0",
-    "react-jss": "^8.4.0"
+    "start": "parcel src/index.html --out-dir docs"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.6.1",
-    "babel-watch": "^2.0.7"
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.17.4"
   }
 }
