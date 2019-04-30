@@ -38,7 +38,7 @@ section.artwork img {
 }
 .modal div {
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 600px;
@@ -54,6 +54,9 @@ section.artwork img {
 }
 .modal .close img:hover {
   transform: scale(1.1);
+}
+.modal .modal-text {
+  display: none;
 }
 
 body {
@@ -77,6 +80,49 @@ body {
 }
 .links a img:hover {
   transform: scale(1.1);
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  border-radius: 3px;
+  display: block;
+  min-width: 300px;
+  border: 1px solid #ccc;
+  margin: 8px 0;
+}
+
+#error, #thankyou {
+  padding: 8px;
+  color: #fff;
+  font-weight: bold;
+  border: 0;
+  border-radius: 3px;
+  margin: 16px 0;
+  display: block;
+  width: 300px;
+}
+
+#error {
+  background: #d34023;
+}
+
+#thankyou {
+  background: #49a442;
+}
+
+.pay-btn {
+  display: block;
+  padding: 8px;
+  background: #7B3598;
+  color: #fff;
+  font-weight: bold;
+  width: 300px;
+  text-align: center;
+  border-radius: 3px;
 }
 
 h1, h2, h3 {

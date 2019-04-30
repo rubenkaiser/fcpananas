@@ -13,7 +13,9 @@
   </head>
   <body>
     <header>
+      <a href="/" title="Pananas home">
         <h1><img src="assets/images/logo.svg" alt="FC Pananas.nl"/></h1>
+      </a>
     </header>
 
     <section class="artwork">
@@ -61,10 +63,7 @@
         <section class="register modal-text">
           <h1>Teams aanmelden</h1>
           <p>Ook dit jaar zullen bij het Pananas toernooi 15 teams de strijd om de felbegeerde Pananas bokaal, shootout beker
-             en rode lantaarn cup aangaan. Zorg dat je team zo snel mogelijk ingeschreven staat, inschrijvingen zijn pas definitief na 
-             betaling. Dit kan met de betalingsinstructies die de toernooi leiding na aanmelding zal verstrekken.
-             Meld je nu aan via onze <a href="https://www.facebook.com/events/225181114929982/" target="_blank">Facebookpagina</a>.
-            Toch nog een vraag? stuur een bericht via de <a href="https://www.facebook.com/events/225181114929982/" target="_blank">Facebook pagina.</a>
+             en rode lantaarn cup aangaan. Schrijf je in via onderstaand formulier en betaal direct via iDeal.
           </p>
           <h2>Kosten, betaling en wat krijg je ervoor?</h2>
           <p>
@@ -72,9 +71,27 @@
             Onbeperkt toegang tot het foodcourt, de feesttent en de zonneweide. Daarnaast is de overheerlijke vleesschaal voor de aansluitende barbeque inbegrepen (inclusief stokbrood, kruidenboter en salades).
             Ook is er de mogelijkheid om een extra vleesschaal te bestellen (45 euro per schaal).
           </p>
-          <p>
-            Aangemelde teams ontvangen een specifieke betalingsinstructie. Deelname is pas definitief na ontvangst van betaling! 
-          </p>
+
+          <h2>Schrijf je nu in en betaal direct via iDeal!</h2>
+
+          <div id="thankyou" style="display: none;">
+            Bedankt voor de inschrijving en betaling! We zullen zo snel mogelijk een bevestiging sturen.
+          </div>
+
+          <label>Team naam:</label>
+          <input id="teamName" type="text" name="teamName" />
+          <label>Email contactpersoon:</label>
+          <input id="email" type="email" name="email" />
+          <label>Extra vleesschaal (45 euro per stuk)</label>
+          <input id="extraMeat" type="number" value="0" name="extraMeat" />
+
+          <div id="error" style="display: none;">
+            Vul aub een geldige naam in (minimaal 5 karakters)
+          </div>
+          
+          <a id="pay" class="pay-btn">
+            Inschrijven en direct betalen
+          </a>
 
           <h2>Hoeveel spelers heb ik ongeveer nodig?</h2>
           <p>

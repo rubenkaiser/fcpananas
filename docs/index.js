@@ -184,78 +184,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/style.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./../assets/images/cursor.png":[["cursor.063ac84a.png","assets/images/cursor.png"],"assets/images/cursor.png"],"./../assets/images/bg-pattern.png":[["bg-pattern.aaa62e28.png","assets/images/bg-pattern.png"],"assets/images/bg-pattern.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
-"use strict";
-
-require("./scss/style.scss");
-
-var baseUrl = 'https://dc4eu4r9dh.execute-api.eu-west-1.amazonaws.com/prod/api'; // http://localhost:3000/api
-
-function validateEmail(email) {
-  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(email);
-}
-
-$('document').ready(function () {
-  if (window.location.href.indexOf('?payment=true') > -1) {
-    $('.modal-text.register').show();
-    $('#thankyou').show();
-    $('.modal').show();
-    setTimeout(function () {
-      $('#thankyou').hide();
-    }, 5000);
-  }
-
-  $('.modal-btn').on('click', function () {
-    var modalType = $(this).data('type');
-    $('.modal-text').hide();
-    $('.modal-text.' + modalType).show();
-    $('.modal').show();
-  });
-  $('.close').on('click', function () {
-    $('.modal').hide();
-  });
-  $('#teamName').on('input', function () {
-    console.log($('#teamName').val());
-
-    if ($('#teamName').val().length > 5) {
-      $('#error').hide();
-    }
-  });
-  $('#pay').on('click', function () {
-    console.log('pay');
-
-    if ($('#teamName').val().length > 5 && validateEmail($('#email').val())) {
-      $.ajax({
-        url: baseUrl + '/payments',
-        type: 'POST',
-        contentType: 'application/json',
-        data: JSON.stringify({
-          teamName: $('#teamName').val(),
-          extraMeat: $('#extraMeat').val(),
-          email: $('#email').val()
-        }),
-        dataType: 'json',
-        success: function success(result) {
-          if (result.link && result.id) {
-            window.location.replace(result.link);
-          }
-        },
-        error: function error(xhr, ajaxOptions, thrownError) {
-          alert('Er is iets fout gegaan. Probeer het nog eens.');
-        }
-      });
-    } else {
-      $('#error').show();
-    }
-  });
-});
-},{"./scss/style.scss":"scss/style.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -458,5 +387,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/index.js.map
